@@ -4,7 +4,9 @@
   "description": "quick generate react components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pmin": "git add . && git commit -m 'minor version bump' && npm version minor && npm publish",
+    "pmax": "git add . && git commit -m 'major version bump' && npm version major && npm publish"
   },
   "author": "pr",
   "license": "ISC"
