@@ -1,5 +1,12 @@
 #!/usr/local/bin/bash
 
+ Red='\033[1;91m'        # Red
+  Yellow='\033[1;93m'     # Yellow
+  Purple='\033[1;95m'     # Purple
+  Cyan='\033[1;96m'       # Cyan
+  Green='\033[1;32m'       # Green
+  NaN='\033[0m'
+
 
 function g {
   while test $# -gt 0; do
@@ -77,13 +84,6 @@ done
 
 }
 function grc () {
-
-  Red='\033[1;91m'        # Red
-  Yellow='\033[1;93m'     # Yellow
-  Purple='\033[1;95m'     # Purple
-  Cyan='\033[1;96m'       # Cyan
-  Green='\033[1;32m'       # Green
-  NaN='\033[0m'
 
 echo $Purple 'React Component Generator' $NaN
 echo $Purple '--------------------------' $NaN
