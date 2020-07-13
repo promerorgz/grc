@@ -26,12 +26,12 @@ function g {
         read name
         echo -e $Purple Generating page... $NaN 
         touch $PWD/src/pages/$name.js
-        sed -e "s/PAGE_NAME/$name/g" ./templates/page.js > src/pages/$name.js
+        sed -e "s/PAGE_NAME/$name/g" $PWD/node_modules/dope-grc/templates/page.js > src/pages/$name.js
         echo -e $Green 'Page created!' $NaN
       else
         echo -e $Purple Generating page... $NaN 
         touch ./src/pages/$2.js
-        sed -e "s/PAGE_NAME/$2/g" $PWD/templates/page.js > src/pages/$2.js
+        sed -e "s/PAGE_NAME/$2/g" $PWD/node_modules/dope-grc/templates/page.js > src/pages/$2.js
         echo -e $Green 'Page created!' $NaN
       fi
       break
@@ -93,14 +93,14 @@ cd $PWD
 function createStylesheet {
     echo -e $Purple Generating style sheet... $NaN
     touch $PWD/src/components/$1/styles.js
-    sed -e "s/COMPONENT_NAME/$1/g" ./templates/style.js > src/components/$1/styles.js
+    sed -e "s/COMPONENT_NAME/$1/g" $PWD/node_modules/dope-grc/templates/style.js > src/components/$1/styles.js
     echo -e $Green 'Style file created!' $NaN
 }
 
 function createIndex {
   echo -e $Purple Generating index file... $NaN 
   touch $PWD/src/components/$1/index.jsx
-  sed -e "s/COMPONENT_NAME/$1/g" ./templates/react.js > src/components/$1/index.jsx
+  sed -e "s/COMPONENT_NAME/$1/g" $PWD/node_modules/dope-grc/templates/react.js > src/components/$1/index.jsx
   echo -e $Green 'Index file created!' $NaN
 }
 
