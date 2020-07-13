@@ -1,6 +1,6 @@
 {
   "name": "dope-grc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "quick generate react components",
   "main": "index.js",
   "scripts": {
