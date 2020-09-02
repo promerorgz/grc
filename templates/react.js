@@ -3,9 +3,9 @@ import StyledCOMPONENT_NAME from './styles.js';
 
 const COMPONENT_NAME = () => {
   return (
-    <div>
+    <StyledCOMPONENT_NAME>
       {/* start coding here */}
-    </div>
+    </StyledCOMPONENT_NAME>
   )
 }
 
